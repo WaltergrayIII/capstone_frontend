@@ -1,18 +1,36 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>All Products</h1>
+    <div v-for="product in products">
+      <h2>Title: {{ product.name }}</h2>
+      <p>Description: {{ product.description }}</p>
+      <img v-bind:src="product.image" alt />
+      <div>
+        <router-link v-bind:to="`/products/${product.id}`">More details</router-link>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import axios from "axios";
 
 export default {
-  name: 'Home',
-  components: {
-    HelloWorld
-  }
-}
+  data: function() {
+    return {
+      products: [],
+    };
+  },
+  created: function() {
+    this.indexProducts();
+  },
+  methods: {
+    indexproducts: function() {
+      axios.get("/api/products").then(response => {
+        console.log("Get all products: ", response);
+        this.products = response.data;
+      });
+    },
+  },
+};
 </script>

@@ -25,7 +25,7 @@ export default {
     this.indexProducts();
   },
   methods: {
-    indexproducts: function() {
+    indexProducts: function() {
       axios.get("/api/products").then(response => {
         console.log("Get all products: ", response);
         this.products = response.data;

@@ -15,16 +15,20 @@
           <input type="text" class="form-control" v-model="description" />
         </div>
         <div class="form-group">
-          <label>Image:</label>
-          <input type="image" class="form-control" v-model="image" />
+          <label>Image_url:</label>
+          <input type="text" class="form-control" v-model="image_url" />
         </div>
         <div class="form-group">
           <label>:Approximate_value:</label>
-          <input type="text" class="form-control" v-model="approximate_value" />
+          <input type="text" class="form-control" v-model="approximateValue" />
         </div>
         <div class="form-group">
           <label>Category ID:</label>
-          <input type="text" class="form-control" v-model="category_id" />
+          <input type="text" class="form-control" v-model="categoryId" />
+        </div>
+        <div class="form-group">
+          <label>Link:</label>
+          <input type="text" class="form-control" v-model="link" />
         </div>
 
         <input type="submit" class="btn btn-primary" value="Submit" />
@@ -39,18 +43,24 @@ import axios from "axios";
 export default {
   data: function() {
     return {
-      Title: "",
-      Body: "",
+      Name: "",
+      Description: "",
       Image: "",
+      ApproximateValue: "",
+      CategoryId: "",
+      Link: "",
       errors: [],
     };
   },
   methods: {
     submit: function() {
       var params = {
-        title: this.title,
-        body: this.body,
-        image: this.image,
+        name: this.name,
+        description: this.description,
+        image_url: this.image_url,
+        approximate_value: this.approximate_value,
+        category_id: this.category_id,
+        link: this.link,
       };
       axios
         .Product("/api/Products", params)

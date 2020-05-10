@@ -42,7 +42,7 @@ export default {
         Description: product.description,
         Image_url: product.image_url,
         Link: product.link,
-        Category_id: product.Category_id,
+        Category_id: product.category_id,
         Approximate_value: product.approximate_value,
       };
       axios

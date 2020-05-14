@@ -4,15 +4,12 @@
     <p>{{ product.description }}</p>
     <p>{{ product.approximate_value}}</p>
     <p>{{ product.link}}</p>
-    <img v-bind:src="product.image" alt />
+    <img v-bind:src="product.image_url" alt />
     <div>
       <router-link to="/products">Back to all products</router-link>
     </div>
     <div>
       <router-link v-bind:to="`/products/${product.id}/edit`">Edit product</router-link>
-    </div>
-    <div>
-      <button v-on:click="destroyProduct(product)">Destroy product</button>
     </div>
   </div>
 </template>

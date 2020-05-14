@@ -19,7 +19,7 @@
           <input type="text" class="form-control" v-model="image_url" />
         </div>
         <div class="form-group">
-          <label>:Approximate_value:</label>
+          <label>Approximate_value:</label>
           <input type="text" class="form-control" v-model="approximateValue" />
         </div>
         <div class="form-group">

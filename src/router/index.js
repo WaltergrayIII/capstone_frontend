@@ -8,6 +8,9 @@ import ProductsIndex from "../views/ProductsIndex.vue";
 import ProductsNew from "../views/ProductsNew.vue";
 import ProductsShow from "../views/ProductsShow.vue";
 import ProductsEdit from "../views/ProductsEdit.vue";
+import SwapiIndex from "../views/SwapiIndex.vue";
+import SwapiShow from "../views/SwapiShow.vue";
+import MovieLink from "../views/MovieLink.vue";
 
 Vue.use(VueRouter);
 
@@ -39,6 +42,21 @@ const routes = [
     path: "/products/:id/edit",
     name: "products-edit",
     component: ProductsEdit,
+  },
+  {
+    path: "/swapi",
+    name: "swapi-index",
+    component: SwapiIndex,
+  },
+  {
+    path: "/swapishow/:id",
+    name: "swapi-show",
+    component: SwapiShow,
+  },
+  {
+    path: "/MovieLink",
+    name: "movie-link",
+    component: MovieLink,
   },
 ];
 

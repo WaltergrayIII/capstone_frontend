@@ -1,8 +1,8 @@
 <template>
   <div class="home">
     <h1>All products</h1>
-    <div v-for="product in products">
-      <div class="row">
+    <div class="row">
+      <div v-for="product in products">
         <div class="col-sm-6 col-md-4">
           <div class="thumbnail">
             <img v-bind:src="product.image_url" alt />

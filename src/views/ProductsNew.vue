@@ -60,9 +60,9 @@ export default {
         link: this.link,
       };
       axios
-        .Product("/api/Products", params)
+        .post("/api/products", params)
         .then(response => {
-          this.$router.push("/Products");
+          this.$router.push("/products");
         })
         .catch(error => {
           this.errors = error.response.data.errors;

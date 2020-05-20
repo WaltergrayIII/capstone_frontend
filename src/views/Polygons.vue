@@ -2,7 +2,7 @@
 <body class="c3po">
   <div class="wrapper">
     <div class="console">
-      <h1 class="poly1">POLYGONS OF THE GALAXY</h1>
+      <h1>POLYGONS OF THE GALAXY</h1>
       <button id="c3po">C3PO</button>
       <button id="stormtrooper">Stormtrooper</button>
       <button id="darthvader">Darth Vader</button>
@@ -59,7 +59,7 @@
     </div>
 
     <div class="explore">
-      <h2 class="poly2">EXPLORE THE GALAXY</h2>
+      <h2>EXPLORE THE GALAXY</h2>
       <a href="/polygons" target="_blank()">
         <button class="active">Episode I</button>
       </a>

@@ -3107,7 +3107,7 @@ button:disabled,
   background-color: #353849;
   border-radius: 5px;
   margin: 1.5em 3em 1.5em 0;
-  width: calc(50% - 1.5em);
+  width: calc(100% - 1.5em);
 }
 
 .features article:nth-child(2n) {
@@ -3371,7 +3371,7 @@ button:disabled,
   -ms-transition: opacity 0.35s ease, -ms-transform 0.35s ease;
   transition: opacity 0.35s ease, transform 0.35s ease;
   -webkit-overflow-scrolling: touch;
-  background: #4c5c96;
+  background: rgb(27, 27, 27);
   border-radius: 5px;
   display: block;
   max-width: 100%;

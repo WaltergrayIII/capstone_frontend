@@ -18,7 +18,9 @@
           <section class="features">
             <article>
               <h3 class="major">{{ planet.name }}</h3>
-              <router-link v-bind:to="`/swapishow/${planet.name}`">More details</router-link>
+              <router-link
+                v-bind:to="`/swapishow/${planet.url.split('/').slice(-2).slice(0,-1)}`"
+              >More details</router-link>
             </article>
           </section>
         </div>
@@ -29,7 +31,7 @@
           <section class="features">
             <article>
               <h3 class="major">{{ film.title }}</h3>
-              <router-link v-bind:to="`/swapishow/${film.title}`">More details</router-link>
+              <router-link v-bind:to="`/swapishow/${film.episode_id}`">More details</router-link>
             </article>
           </section>
         </div>
@@ -40,7 +42,9 @@
           <section class="features">
             <article>
               <h3 class="major">{{ specie.name }}</h3>
-              <router-link v-bind:to="`/swapishow/${specie.name}`">More details</router-link>
+              <router-link
+                v-bind:to="`/swapishow/${specie.url.split('/').slice(-2).slice(0,-1)}`"
+              >More details</router-link>
             </article>
           </section>
         </div>
@@ -51,7 +55,9 @@
           <section class="features">
             <article>
               <h3 class="major">{{ vehicle.name }}</h3>
-              <router-link v-bind:to="`/swapishow/${vehicle.name}`">More details</router-link>
+              <router-link
+                v-bind:to="`/swapishow/${vehicle.url.split('/').slice(-2).slice(0,-1)}`"
+              >More details</router-link>
             </article>
           </section>
         </div>
@@ -62,7 +68,9 @@
           <section class="features">
             <article>
               <h3 class="major">{{ starship.name }}</h3>
-              <router-link v-bind:to="`/swapishow/${starship.name}`">More details</router-link>
+              <router-link
+                v-bind:to="`/swapishow/${starship.url.split('/').slice(-2).slice(0,-1)}`"
+              >More details</router-link>
             </article>
           </section>
         </div>

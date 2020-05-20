@@ -10,17 +10,18 @@
     <div class="main-content">
       <div class="title-content">
         <p class="content-header">
-          WELCOME TO STARWARS!!!
-          <br />A place to share your cool fan stuff, and enjoy some cool stuff.
+          WELCOME TO ShowYourForce!!!
+          <p></p>
+          <br />In a galaxy far far away, where outlaws run wild and the rebel alliance is long gone. I present to you ShowYourForce, the ultimate place for star wars fans to come and show off your amazing Star Wars memorabelia.
         </p>
 
         <br />
 
         <p
           class="content-body"
-        >The ultimate star wars website please feel free to show off your stuff.</p>
+        >Please come on in and signup for free to show off your amazing star wars stuff. Or just enjoy some of the other cool features ShowYourForce has to offer.</p>
 
-        <a href="/landing" class="space-button">Come on in!</a>
+        <a href="/landing" class="space-button">Enter</a>
       </div>
     </div>
   </div>

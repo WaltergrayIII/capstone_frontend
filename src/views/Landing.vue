@@ -44,7 +44,7 @@
           <router-link v-bind:to="'/signup'" class="button primary fit small">Signup!</router-link>
         </li>
         <li>
-          <router-link v-bind:to="'/logout'" class="button fit small">Logout</router-link>
+          <router-link v-bind:to="'/login'" class="button fit small">Login</router-link>
         </li>
       </ul>
     </section>

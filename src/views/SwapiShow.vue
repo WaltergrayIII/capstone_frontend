@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h2>Name: {{ person.name }}</h2>
+    <h2>{{ person.name }}</h2>
     <p>Birth Year:{{ person.birth_year }}</p>
     <p>Eye Color: {{ person.eye_color }}</p>
     <p>Gender: {{ person.gender}}</p>
@@ -10,8 +10,8 @@
     <p>Skin Color: {{ person.skin_color}}</p>
     <p v-show="planetloaded">Planet: {{ planet.name}}</p>
     <p>Species: {{ species.name}}</p>
-    <p v-for="starship in starships">Starships: {{ starship.name}}</p>
-    <p v-for="vehicle in vehicles">Vehicles: {{ vehicle.name}}</p>
+    <p v-for="starship in starships">Starships Flown: {{ starship.name}}</p>
+    <p v-for="vehicle in vehicles">Vehicles Used: {{ vehicle.name}}</p>
     <p v-for="film in films">Appeared in: {{ film.title }}</p>
 
     <div>
@@ -117,3 +117,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+p {
+  color: white;
+}
+</style>

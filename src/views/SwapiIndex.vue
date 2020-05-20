@@ -1,82 +1,73 @@
 <template>
   <div class="home">
-    <div class="row">
-      
-      <h1>Characters</h1>
+    <section id="two" class="wrapper alt style2">
+      <h2 class="major">Characters</h2>
       <div v-for="person in people">
-        <div class="col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <div class="caption">
-              <h3>{{ person.name }}</h3>
-              <router-link
-                v-bind:to="`/swapishow/${person.url.split('/').slice(-2).slice(0,-1)}`"
-              >More details</router-link>
-            </div>
-          </div>
-        </div>
+        <section class="features">
+          <article>
+            <h3 class="major">{{ person.name }}</h3>
+            <router-link
+              v-bind:to="`/swapishow/${person.url.split('/').slice(-2).slice(0,-1)}`"
+            >More details</router-link>
+          </article>
+        </section>
       </div>
-
-      <h1>Planets</h1>
-      <div v-for="planet in planets">
-        <div class="col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <div class="caption">
-              <h3>{{ planet.name }}</h3>
+      <div class="inner">
+        <h2 class="major">Planets</h2>
+        <div v-for="planet in planets">
+          <section class="features">
+            <article>
+              <h3 class="major">{{ planet.name }}</h3>
               <router-link v-bind:to="`/swapishow/${planet.name}`">More details</router-link>
-            </div>
-          </div>
+            </article>
+          </section>
         </div>
       </div>
-
-      <h1>Films</h1>
-      <div v-for="film in films">
-        <div class="col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <div class="caption">
-              <h3>{{ film.title }}</h3>
+      <div class="inner">
+        <h2 class="major">Films</h2>
+        <div v-for="film in films">
+          <section class="features">
+            <article>
+              <h3 class="major">{{ film.title }}</h3>
               <router-link v-bind:to="`/swapishow/${film.title}`">More details</router-link>
-            </div>
-          </div>
+            </article>
+          </section>
         </div>
       </div>
-
-      <h1>Species</h1>
-      <div v-for="specie in species">
-        <div class="col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <div class="caption">
-              <h3>{{ specie.name }}</h3>
+      <div class="inner">
+        <h2 class="major">Species</h2>
+        <div v-for="specie in species">
+          <section class="features">
+            <article>
+              <h3 class="major">{{ specie.name }}</h3>
               <router-link v-bind:to="`/swapishow/${specie.name}`">More details</router-link>
-            </div>
-          </div>
+            </article>
+          </section>
         </div>
       </div>
-
-      <h1>Vehicles</h1>
-      <div v-for="vehicle in vehicles">
-        <div class="col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <div class="caption">
-              <h3>{{ vehicle.name }}</h3>
+      <div class="inner">
+        <h2 class="major">Vehicles</h2>
+        <div v-for="vehicle in vehicles">
+          <section class="features">
+            <article>
+              <h3 class="major">{{ vehicle.name }}</h3>
               <router-link v-bind:to="`/swapishow/${vehicle.name}`">More details</router-link>
-            </div>
-          </div>
-        </div>
-      </div
-
-      <h1>Starships</h1>
-      <div v-for="starship in starships">
-        <div class="col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <div class="caption">
-              <h3>{{ starship.name }}</h3>
-              <router-link v-bind:to="`/swapishow/${starship.name}`">More details</router-link>
-            </div>
-          </div>
+            </article>
+          </section>
         </div>
       </div>
-
-    </div>
+      <div class="inner">
+        <h2 class="major">Starships</h2>
+        <div v-for="starship in starships">
+          <section class="features">
+            <article>
+              <h3 class="major">{{ starship.name }}</h3>
+              <router-link v-bind:to="`/swapishow/${starship.name}`">More details</router-link>
+            </article>
+          </section>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 

@@ -1,5 +1,53 @@
 <template>
   <div>
+    <section>
+      <ul class="actions fit small">
+        <li>
+          <router-link
+            v-bind:to="'/products'"
+            class="button primary fit small"
+          >Check Out Everyone Star Wars Stuff</router-link>
+        </li>
+        <li>
+          <router-link
+            v-bind:to="'/products/new'"
+            class="button fit small"
+          >Show off One of your own Collectables</router-link>
+        </li>
+        <li>
+          <router-link v-bind:to="'/swapi'" class="button primary fit small">Star Wars Info</router-link>
+        </li>
+        <li>
+          <router-link v-bind:to="'/polygons'" class="button fit small">Polygons of the Universe</router-link>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <ul class="actions fit small">
+        <li>
+          <router-link
+            v-bind:to="'/starwarsname'"
+            class="button primary fit small"
+          >Find out your own Star Wars name!</router-link>
+        </li>
+        <li>
+          <router-link v-bind:to="'/movielink'" class="button fit small">Movie Links</router-link>
+        </li>
+        <li>
+          <router-link v-bind:to="'/home'" class="button fit primary small">Back to Star Wars Crawl</router-link>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <ul class="actions fit small">
+        <li>
+          <router-link v-bind:to="'/signup'" class="button primary fit small">Signup!</router-link>
+        </li>
+        <li>
+          <router-link v-bind:to="'/logout'" class="button fit small">Logout</router-link>
+        </li>
+      </ul>
+    </section>
     <h1 class="me">Move your mouse around</h1>
     <img class="bb1" src="http://i.imgur.com/LOVEc.jpg" />
     <div id="bb8">

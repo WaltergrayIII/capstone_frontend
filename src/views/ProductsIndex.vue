@@ -1,20 +1,23 @@
 <template>
   <div class="home">
-    <h1>All products</h1>
-    <div class="row">
-      <div v-for="product in products">
-        <div class="col-sm-6">
-          <div class="thumbnail">
-            <img v-bind:src="product.image_url" alt />
-            <div class="caption">
-              <h3>{{ product.name }}</h3>
-              <p>{{ product.description }}</p>
-              <router-link v-bind:to="`/products/${product.id}`">More details</router-link>
-            </div>
-          </div>
+    <section id="four" class="wrapper alt style1">
+      <div class="inner">
+        <h2 class="major">Everyones Cool Stuff</h2>
+        <div v-for="product in products">
+          <section class="features">
+            <article rows="2">
+              <a href="#" class="image">
+                <img v-bind:src="product.image_url" alt />
+              </a>
+              <h3 class="major">{{ product.name }}</h3>
+              <p>{{ product.description}}</p>
+              <router-link v-bind:to="`/products/${product.id}`" class="special">More details</router-link>
+            </article>
+          </section>
+          <ul class="actions"></ul>
         </div>
       </div>
-    </div>
+    </section>
   </div>
 </template>
 

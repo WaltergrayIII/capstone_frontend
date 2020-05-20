@@ -57,7 +57,7 @@ export default {
 @color-gold: #e5b13a;
 @color-submit: #e74c3c;
 
-body.name {
+body {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande",
     sans-serif;
   font-weight: 300;
@@ -76,7 +76,6 @@ body.name {
 }
 
 html {
-  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/109450/star-wars-bg.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -114,7 +113,7 @@ button.submit {
   display: block;
   width: 100%;
   padding: 15px;
-  background: blue;
+  background: gray;
   color: white;
   border: none;
   text-transform: uppercase;

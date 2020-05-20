@@ -2,10 +2,7 @@
   <div class="signup">
     <div class="container">
       <form v-on:submit.prevent="submit()">
-        <h1>New Product</h1>
-        <ul>
-          <li class="text-danger" v-for="product in products">{{ product }}</li>
-        </ul>
+        <h1>Show Off My Product</h1>
         <div class="form-group">
           <label>Name:</label>
           <input type="text" class="form-control" v-model="name" />

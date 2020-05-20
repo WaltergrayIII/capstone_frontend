@@ -11,6 +11,13 @@ import ProductsEdit from "../views/ProductsEdit.vue";
 import SwapiIndex from "../views/SwapiIndex.vue";
 import SwapiShow from "../views/SwapiShow.vue";
 import MovieLink from "../views/MovieLink.vue";
+import StarWarsName from "../views/StarWarsName.vue";
+import Landing from "../views/Landing.vue";
+import Polygons from "../views/Polygons.vue";
+import Polygons2 from "../views/Polygons2.vue";
+import Polygons3 from "../views/Polygons3.vue";
+import Polygons4 from "../views/Polygons4.vue";
+import Polygons5 from "../views/Polygons5.vue";
 
 Vue.use(VueRouter);
 
@@ -57,6 +64,41 @@ const routes = [
     path: "/MovieLink",
     name: "movie-link",
     component: MovieLink,
+  },
+  {
+    path: "/StarWarsName",
+    name: "star-wars-name",
+    component: StarWarsName,
+  },
+  {
+    path: "/landing",
+    name: "landing",
+    component: Landing,
+  },
+  {
+    path: "/polygons",
+    name: "polygons",
+    component: Polygons,
+  },
+  {
+    path: "/polygons2",
+    name: "polygons2",
+    component: Polygons2,
+  },
+  {
+    path: "/polygons3",
+    name: "polygons3",
+    component: Polygons3,
+  },
+  {
+    path: "/polygons4",
+    name: "polygons4",
+    component: Polygons4,
+  },
+  {
+    path: "/polygons5",
+    name: "polygons5",
+    component: Polygons5,
   },
 ];
 

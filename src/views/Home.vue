@@ -1,4 +1,5 @@
 <template>
+<body class="intro">
   <div class="star-wars-intro">
     <p class="intro-text">Hello Star Wars Fans, welcome to my Website</p>
 
@@ -19,10 +20,11 @@
           class="content-body"
         >The ultimate star wars website please feel free to show off your stuff.</p>
 
-        <a href="/products" class="space-button">Come on in!</a>
+        <a href="/landing" class="space-button">Come on in!</a>
       </div>
     </div>
   </div>
+</body>
 </template>
 
 <style scoped>

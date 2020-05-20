@@ -3,7 +3,7 @@
     <h1>All products</h1>
     <div class="row">
       <div v-for="product in products">
-        <div class="col-sm-6 col-md-4">
+        <div class="col-sm-6">
           <div class="thumbnail">
             <img v-bind:src="product.image_url" alt />
             <div class="caption">

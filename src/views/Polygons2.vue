@@ -1,74 +1,82 @@
 <!-- Jquery -->
 <template>
-  <body class="r2d2">
-    <div class="wrapper">
-      <div class="console">
-        <h1>POLYGONS OF THE GALAXY II</h1>
-        <button id="r2d2">R2D2</button>
-        <button id="shadowtrooper">Shadowtrooper</button>
-        <button id="darthmaul">Darth Maul</button>
-        <button id="jangofett">Jango Fett</button>
+<body class="r2d2">
+  <div class="wrapper">
+    <div class="console">
+      <h1>POLYGONS OF THE GALAXY II</h1>
+      <button id="r2d2">R2D2</button>
+      <button id="shadowtrooper">Shadowtrooper</button>
+      <button id="darthmaul">Darth Maul</button>
+      <button id="jangofett">Jango Fett</button>
+    </div>
+
+    <div class="stage">
+      <div class="main-stage full-width">
+        <div class="triangle t-1"></div>
+        <div class="triangle t-2"></div>
+        <div class="triangle t-3"></div>
+        <div class="triangle t-4"></div>
+        <div class="triangle t-5"></div>
+
+        <div class="triangle t-6"></div>
+        <div class="triangle t-7"></div>
+        <div class="triangle t-8"></div>
+        <div class="triangle t-9"></div>
+        <div class="triangle t-10"></div>
+
+        <div class="triangle t-11"></div>
+        <div class="triangle t-12"></div>
+        <div class="triangle t-13"></div>
+        <div class="triangle t-14"></div>
+        <div class="triangle t-15"></div>
+
+        <div class="triangle t-16"></div>
+        <div class="triangle t-17"></div>
+        <div class="triangle t-18"></div>
+        <div class="triangle t-19"></div>
+        <div class="triangle t-20"></div>
+
+        <div class="triangle t-21"></div>
+        <div class="triangle t-22"></div>
+        <div class="triangle t-23"></div>
+        <div class="triangle t-24"></div>
+        <div class="triangle t-25"></div>
+
+        <div class="triangle t-26"></div>
+        <div class="triangle t-27"></div>
+        <div class="triangle t-28"></div>
+        <div class="triangle t-29"></div>
+        <div class="triangle t-30"></div>
       </div>
 
-      <div class="stage">
-        <div class="main-stage full-width">
-          <div class="triangle t-1"></div>
-          <div class="triangle t-2"></div>
-          <div class="triangle t-3"></div>
-          <div class="triangle t-4"></div>
-          <div class="triangle t-5"></div>
-
-          <div class="triangle t-6"></div>
-          <div class="triangle t-7"></div>
-          <div class="triangle t-8"></div>
-          <div class="triangle t-9"></div>
-          <div class="triangle t-10"></div>
-
-          <div class="triangle t-11"></div>
-          <div class="triangle t-12"></div>
-          <div class="triangle t-13"></div>
-          <div class="triangle t-14"></div>
-          <div class="triangle t-15"></div>
-
-          <div class="triangle t-16"></div>
-          <div class="triangle t-17"></div>
-          <div class="triangle t-18"></div>
-          <div class="triangle t-19"></div>
-          <div class="triangle t-20"></div>
-
-          <div class="triangle t-21"></div>
-          <div class="triangle t-22"></div>
-          <div class="triangle t-23"></div>
-          <div class="triangle t-24"></div>
-          <div class="triangle t-25"></div>
-
-          <div class="triangle t-26"></div>
-          <div class="triangle t-27"></div>
-          <div class="triangle t-28"></div>
-          <div class="triangle t-29"></div>
-          <div class="triangle t-30"></div>
-        </div>
-
-        <div class="stage-quote full-width">
-          <h2 class="quote-r2d2">*beep*</h2>
-          <h2 class="quote-shadowtrooper">I'll give you a hint: It's not just paint</h2>
-          <h2 class="quote-darthmaul">At last, we will have revenge</h2>
-          <h2 class="quote-jangofett">I'm just a simple man, trying to make my way in the universe</h2>
-        </div>
-      </div>
-
-      <div class="explore">
-        <h2>EXPLORE THE GALAXY</h2>
-        <a href="/polygons" target="_blank()"><button>Episode I</button></a>
-        <a href="/polygons2" target="_blank()">
-          <button class="active">Episode II</button>
-        </a>
-        <a href="/polygons3" target="_blank()"><button>Episode III</button></a>
-        <a href="/polygons4" target="_blank()"><button>Episode IV</button></a>
-        <a href="/polygons5" target="_blank()"><button>Episode V</button></a>
+      <div class="stage-quote full-width">
+        <h2 class="quote-r2d2">*beep*</h2>
+        <h2 class="quote-shadowtrooper">I'll give you a hint: It's not just paint</h2>
+        <h2 class="quote-darthmaul">At last, we will have revenge</h2>
+        <h2 class="quote-jangofett">I'm just a simple man, trying to make my way in the universe</h2>
       </div>
     </div>
-  </body>
+
+    <div class="explore">
+      <h2>EXPLORE THE GALAXY</h2>
+      <a href="/polygons">
+        <button>Episode I</button>
+      </a>
+      <a href="/polygons2">
+        <button class="active">Episode II</button>
+      </a>
+      <a href="/polygons3">
+        <button>Episode III</button>
+      </a>
+      <a href="/polygons4">
+        <button>Episode IV</button>
+      </a>
+      <a href="/polygons5">
+        <button>Episode V</button>
+      </a>
+    </div>
+  </div>
+</body>
 </template>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

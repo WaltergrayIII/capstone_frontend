@@ -10,16 +10,16 @@
     <div class="main-content">
       <div class="title-content">
         <p class="content-header">
-          WELCOME TO ShowYourForce!!!
+          WELCOME TO YoDa!!!
           <p></p>
-          <br />In a galaxy far far away, where outlaws run wild and the rebel alliance is long gone. I present to you ShowYourForce, the ultimate place for star wars fans to come and show off your amazing Star Wars memorabelia.
+          <br />In a galaxy far far away, where outlaws run wild and the rebel alliance is long gone. I present to you YoDa, the ultimate place for star wars fans to come and show off your amazing Star Wars memorabelia.
         </p>
 
         <br />
 
         <p
           class="content-body"
-        >Please come on in and signup for free to show off your amazing star wars stuff. Or just enjoy some of the other cool features ShowYourForce has to offer.</p>
+        >Please come on in and signup for free to show off your amazing star wars stuff. Or just enjoy some of the other cool features YoDa has to offer.</p>
 
         <a href="/landing" class="space-button">Enter</a>
       </div>

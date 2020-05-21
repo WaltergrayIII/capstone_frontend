@@ -13,7 +13,7 @@
         </div>
         <div class="form-group">
           <label>Image_url:</label>
-          <input type="text" class="form-control" v-model="image_url" />
+          <input type="text" class="form-control" v-model="imageUrl" />
         </div>
         <div class="form-group">
           <label>Approximate_value:</label>
@@ -42,7 +42,7 @@ export default {
     return {
       Name: "",
       Description: "",
-      Image: "",
+      ImageUrl: "",
       ApproximateValue: "",
       CategoryId: "",
       Link: "",
@@ -71,3 +71,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+input {
+  color: white;
+}
+</style>

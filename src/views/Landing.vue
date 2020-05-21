@@ -1,5 +1,9 @@
 <template>
   <div>
+    <br />
+    <br />
+    <br />
+    <br />
     <section>
       <ul class="actions fit small">
         <li>
@@ -48,7 +52,8 @@
         </li>
       </ul>
     </section>
-    <h1 class="me">Move your mouse around</h1>
+
+    <h1 class="me">Scroll down and Move your mouse around to play with BB8!</h1>
     <img class="bb1" src="http://i.imgur.com/LOVEc.jpg" />
     <div id="bb8">
       <div class="antennaes">
@@ -89,73 +94,82 @@
 </template>
 
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
-var $w = $(window).width();
-var $dW = $("#bb8").width();
-var $dPos = 0;
-var $dSpeed = 1;
-var $dMinSpeed = 1;
-var $dMaxSpeed = 5;
-var $dAccel = 1.05;
-var $dRot = 0;
-var $myPos = $w - $w / 5;
-var $slowOffset = 120;
-var $movingRight = true;
+export default {
+  data: function() {
+    return {};
+  },
+  mounted: function() {
+    var $w = $(window).width();
+    var $dW = $("#bb8").width();
+    var $dPos = 0;
+    var $dSpeed = 1;
+    var $dMinSpeed = 1;
+    var $dMaxSpeed = 5;
+    var $dAccel = 1.05;
+    var $dRot = 0;
+    var $myPos = $w - $w / 5;
+    var $slowOffset = 120;
+    var $movingRight = true;
 
-var roll = function() {
-  if ($myPos > $dPos + $dW / 4) {
-    // moving right
-    if (!$movingRight) {
-      $movingRight = true;
-      $(".antennaes").removeClass("left");
-      $(".outer-eye").removeClass("left");
-      $(".bulls-eye").removeClass("left");
-    }
-    if ($myPos - $dPos > $slowOffset) {
-      if ($dSpeed < $dMaxSpeed) {
-        // speed up
-        $dSpeed = $dSpeed * $dAccel;
+    var roll = function() {
+      if ($myPos > $dPos + $dW / 4) {
+        // moving right
+        if (!$movingRight) {
+          $movingRight = true;
+          $(".antennaes").removeClass("left");
+          $(".outer-eye").removeClass("left");
+          $(".bulls-eye").removeClass("left");
+        }
+        if ($myPos - $dPos > $slowOffset) {
+          if ($dSpeed < $dMaxSpeed) {
+            // speed up
+            $dSpeed = $dSpeed * $dAccel;
+          }
+        } else if ($myPos - $dPos < $slowOffset) {
+          if ($dSpeed > $dMinSpeed) {
+            // slow down
+            $dSpeed = $dSpeed / $dAccel;
+          }
+        }
+        $dPos = $dPos + $dSpeed;
+        $dRot = $dRot + $dSpeed;
+      } else if ($myPos < $dPos - $dW / 4) {
+        // moving left
+        if ($movingRight) {
+          $movingRight = false;
+          $(".antennaes").addClass("left");
+          $(".outer-eye").addClass("left");
+          $(".bulls-eye").addClass("left");
+        }
+        if ($dPos - $myPos > $slowOffset) {
+          if ($dSpeed < $dMaxSpeed) {
+            // speed up
+            $dSpeed = $dSpeed * $dAccel;
+          }
+        } else if ($dPos - $myPos < $slowOffset) {
+          if ($dSpeed > $dMinSpeed) {
+            // slow down
+            $dSpeed = $dSpeed / $dAccel;
+          }
+        }
+        $dPos = $dPos - $dSpeed;
+        $dRot = $dRot - $dSpeed;
       }
-    } else if ($myPos - $dPos < $slowOffset) {
-      if ($dSpeed > $dMinSpeed) {
-        // slow down
-        $dSpeed = $dSpeed / $dAccel;
-      }
-    }
-    $dPos = $dPos + $dSpeed;
-    $dRot = $dRot + $dSpeed;
-  } else if ($myPos < $dPos - $dW / 4) {
-    // moving left
-    if ($movingRight) {
-      $movingRight = false;
-      $(".antennaes").addClass("left");
-      $(".outer-eye").addClass("left");
-      $(".bulls-eye").addClass("left");
-    }
-    if ($dPos - $myPos > $slowOffset) {
-      if ($dSpeed < $dMaxSpeed) {
-        // speed up
-        $dSpeed = $dSpeed * $dAccel;
-      }
-    } else if ($dPos - $myPos < $slowOffset) {
-      if ($dSpeed > $dMinSpeed) {
-        // slow down
-        $dSpeed = $dSpeed / $dAccel;
-      }
-    }
-    $dPos = $dPos - $dSpeed;
-    $dRot = $dRot - $dSpeed;
-  }
 
-  $("#bb8").css("left", $dPos);
-  $(".body").css({ transform: "rotate(" + $dRot + "deg)" });
+      $("#bb8").css("left", $dPos);
+      $(".body").css({ transform: "rotate(" + $dRot + "deg)" });
+    };
+
+    setInterval(roll, 10);
+
+    $(document).on("mousemove", function(event) {
+      $myPos = event.pageX;
+    });
+  },
+  methods: {},
 };
-
-setInterval(roll, 10);
-
-$(document).on("mousemove", function(event) {
-  $myPos = event.pageX;
-});
 </script>
 
 <style lang="scss" scoped>

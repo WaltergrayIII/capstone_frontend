@@ -61,3 +61,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+input {
+  color: white;
+}
+</style>

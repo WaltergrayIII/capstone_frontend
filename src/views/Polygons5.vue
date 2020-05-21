@@ -1,74 +1,82 @@
 <template>
-  <body class="porg">
-    <div class="wrapper">
-      <div class="console">
-        <h1>POLYGONS OF THE GALAXY V</h1>
+<body class="porg">
+  <div class="wrapper">
+    <div class="console">
+      <h1>POLYGONS OF THE GALAXY V</h1>
 
-        <button id="porg">Porg</button>
-        <button id="leiaorgana">Princess Leia Organa</button>
-        <button id="finn">Finn</button>
-        <button id="kyloren">Kylo Ren</button>
+      <button id="porg">Porg</button>
+      <button id="leiaorgana">Princess Leia Organa</button>
+      <button id="finn">Finn</button>
+      <button id="kyloren">Kylo Ren</button>
+    </div>
+
+    <div class="stage">
+      <div class="main-stage full-width">
+        <div class="triangle t-1"></div>
+        <div class="triangle t-2"></div>
+        <div class="triangle t-3"></div>
+        <div class="triangle t-4"></div>
+        <div class="triangle t-5"></div>
+
+        <div class="triangle t-6"></div>
+        <div class="triangle t-7"></div>
+        <div class="triangle t-8"></div>
+        <div class="triangle t-9"></div>
+        <div class="triangle t-10"></div>
+
+        <div class="triangle t-11"></div>
+        <div class="triangle t-12"></div>
+        <div class="triangle t-13"></div>
+        <div class="triangle t-14"></div>
+        <div class="triangle t-15"></div>
+
+        <div class="triangle t-16"></div>
+        <div class="triangle t-17"></div>
+        <div class="triangle t-18"></div>
+        <div class="triangle t-19"></div>
+        <div class="triangle t-20"></div>
+
+        <div class="triangle t-21"></div>
+        <div class="triangle t-22"></div>
+        <div class="triangle t-23"></div>
+        <div class="triangle t-24"></div>
+        <div class="triangle t-25"></div>
+
+        <div class="triangle t-26"></div>
+        <div class="triangle t-27"></div>
+        <div class="triangle t-28"></div>
+        <div class="triangle t-29"></div>
+        <div class="triangle t-30"></div>
       </div>
 
-      <div class="stage">
-        <div class="main-stage full-width">
-          <div class="triangle t-1"></div>
-          <div class="triangle t-2"></div>
-          <div class="triangle t-3"></div>
-          <div class="triangle t-4"></div>
-          <div class="triangle t-5"></div>
-
-          <div class="triangle t-6"></div>
-          <div class="triangle t-7"></div>
-          <div class="triangle t-8"></div>
-          <div class="triangle t-9"></div>
-          <div class="triangle t-10"></div>
-
-          <div class="triangle t-11"></div>
-          <div class="triangle t-12"></div>
-          <div class="triangle t-13"></div>
-          <div class="triangle t-14"></div>
-          <div class="triangle t-15"></div>
-
-          <div class="triangle t-16"></div>
-          <div class="triangle t-17"></div>
-          <div class="triangle t-18"></div>
-          <div class="triangle t-19"></div>
-          <div class="triangle t-20"></div>
-
-          <div class="triangle t-21"></div>
-          <div class="triangle t-22"></div>
-          <div class="triangle t-23"></div>
-          <div class="triangle t-24"></div>
-          <div class="triangle t-25"></div>
-
-          <div class="triangle t-26"></div>
-          <div class="triangle t-27"></div>
-          <div class="triangle t-28"></div>
-          <div class="triangle t-29"></div>
-          <div class="triangle t-30"></div>
-        </div>
-
-        <div class="stage-quote full-width">
-          <h2 class="quote-porg">...</h2>
-          <h2 class="quote-leiaorgana">Help me Obi-wan Kenobi, you're my only hope</h2>
-          <h2 class="quote-finn">I was raised to do one thing, but I've got nothing to fight for</h2>
-          <h2 class="quote-kyloren">I'll show you the Dark Side</h2>
-        </div>
-      </div>
-
-      <div class="explore">
-        <h2>EXPLORE THE GALAXY</h2>
-        <a href="/polygons" target="_blank()"><button>Episode I</button></a>
-        <a href="/polygons2" target="_blank()"><button>Episode II</button></a>
-        <a href="/polygons3" target="_blank()"><button>Episode III</button></a>
-        <a href="h/polygons4" target="_blank()"><button>Episode IV</button></a>
-        <a href="/polygons5" target="_blank()">
-          <button class="active">Episode V</button>
-        </a>
+      <div class="stage-quote full-width">
+        <h2 class="quote-porg">...</h2>
+        <h2 class="quote-leiaorgana">Help me Obi-wan Kenobi, you're my only hope</h2>
+        <h2 class="quote-finn">I was raised to do one thing, but I've got nothing to fight for</h2>
+        <h2 class="quote-kyloren">I'll show you the Dark Side</h2>
       </div>
     </div>
-  </body>
+
+    <div class="explore">
+      <h2>EXPLORE THE GALAXY</h2>
+      <a href="/polygons">
+        <button>Episode I</button>
+      </a>
+      <a href="/polygons2">
+        <button>Episode II</button>
+      </a>
+      <a href="/polygons3">
+        <button>Episode III</button>
+      </a>
+      <a href="h/polygons4">
+        <button>Episode IV</button>
+      </a>
+      <a href="/polygons5">
+        <button class="active">Episode V</button>
+      </a>
+    </div>
+  </div>
+</body>
 </template>
 
 <script>

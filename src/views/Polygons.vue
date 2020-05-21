@@ -60,19 +60,19 @@
 
     <div class="explore">
       <h2>EXPLORE THE GALAXY</h2>
-      <a href="/polygons" target="_blank()">
+      <a href="/polygons">
         <button class="active">Episode I</button>
       </a>
-      <a href="/polygons2" target="_blank()">
+      <a href="/polygons2">
         <button>Episode II</button>
       </a>
-      <a href="/polygons3" target="_blank()">
+      <a href="/polygons3">
         <button>Episode III</button>
       </a>
-      <a href="/polygons4" target="_blank()">
+      <a href="/polygons4">
         <button>Episode IV</button>
       </a>
-      <a href="/polygons5" target="_blank()">
+      <a href="/polygons5">
         <button>Episode V</button>
       </a>
     </div>

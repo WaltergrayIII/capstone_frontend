@@ -1,22 +1,20 @@
 <template>
   <div class="home">
-    <section id="two" class="wrapper alt style2">
-      <h2 class="major">Characters</h2>
-      <div v-for="person in people">
+    <section id="four" class="wrapper alt style1">
+      <div class="inner">
+        <h2 class="major">Characters</h2>
         <section class="features">
-          <article>
+          <article v-for="person in people">
             <h3 class="major">{{ person.name }}</h3>
             <router-link
               v-bind:to="`/swapishow/${person.url.split('/').slice(-2).slice(0,-1)}`"
             >More details</router-link>
           </article>
         </section>
-      </div>
-      <div class="inner">
-        <h2 class="major">Planets</h2>
-        <div v-for="planet in planets">
+        <div class="inner">
+          <h2 class="major">Planets</h2>
           <section class="features">
-            <article>
+            <article v-for="planet in planets">
               <h3 class="major">{{ planet.name }}</h3>
               <router-link
                 v-bind:to="`/swapishow/${planet.url.split('/').slice(-2).slice(0,-1)}`"
@@ -24,23 +22,19 @@
             </article>
           </section>
         </div>
-      </div>
-      <div class="inner">
-        <h2 class="major">Films</h2>
-        <div v-for="film in films">
+        <div class="inner">
+          <h2 class="major">Films</h2>
           <section class="features">
-            <article>
+            <article v-for="film in films">
               <h3 class="major">{{ film.title }}</h3>
               <router-link v-bind:to="`/swapishow/${film.episode_id}`">More details</router-link>
             </article>
           </section>
         </div>
-      </div>
-      <div class="inner">
-        <h2 class="major">Species</h2>
-        <div v-for="specie in species">
+        <div class="inner">
+          <h2 class="major">Species</h2>
           <section class="features">
-            <article>
+            <article v-for="specie in species">
               <h3 class="major">{{ specie.name }}</h3>
               <router-link
                 v-bind:to="`/swapishow/${specie.url.split('/').slice(-2).slice(0,-1)}`"
@@ -48,12 +42,10 @@
             </article>
           </section>
         </div>
-      </div>
-      <div class="inner">
-        <h2 class="major">Vehicles</h2>
-        <div v-for="vehicle in vehicles">
+        <div class="inner">
+          <h2 class="major">Vehicles</h2>
           <section class="features">
-            <article>
+            <article v-for="vehicle in vehicles">
               <h3 class="major">{{ vehicle.name }}</h3>
               <router-link
                 v-bind:to="`/swapishow/${vehicle.url.split('/').slice(-2).slice(0,-1)}`"
@@ -61,12 +53,10 @@
             </article>
           </section>
         </div>
-      </div>
-      <div class="inner">
-        <h2 class="major">Starships</h2>
-        <div v-for="starship in starships">
+        <div class="inner">
+          <h2 class="major">Starships</h2>
           <section class="features">
-            <article>
+            <article v-for="starship in starships">
               <h3 class="major">{{ starship.name }}</h3>
               <router-link
                 v-bind:to="`/swapishow/${starship.url.split('/').slice(-2).slice(0,-1)}`"

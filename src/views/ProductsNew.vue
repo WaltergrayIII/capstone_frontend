@@ -19,12 +19,18 @@
           <label>Approximate_value:</label>
           <input type="text" class="form-control" v-model="approximateValue" />
         </div>
-        <div class="form-group">
-          <label>Category ID:</label>
-          <input type="text" class="form-control" v-model="categoryId" />
+        <div class="col-12">
+          <label for="demo-category">Category</label>
+          <select name="demo-category" id="demo-category">
+            <option value="1">Action Figures</option>
+            <option value="2">Star Wars Legos</option>
+            <option value="3">Gadgets</option>
+            <option value="4">Trading Cards</option>
+            <option value="5">Posters</option>
+          </select>
         </div>
         <div class="form-group">
-          <label>Link:</label>
+          <label>Link if Selling:</label>
           <input type="text" class="form-control" v-model="link" />
         </div>
 
@@ -75,5 +81,14 @@ export default {
 <style scoped>
 input {
   color: white;
+}
+div.signup {
+  text-align: center;
+}
+select {
+  text-align-last: center;
+  text-align: center;
+  -ms-text-align-last: center;
+  -moz-text-align-last: center;
 }
 </style>

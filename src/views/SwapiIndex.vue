@@ -2,6 +2,7 @@
   <div class="home">
     <section id="four" class="wrapper alt style1">
       <div class="inner">
+        <h1>Information Attributed by Swapi</h1>
         <h2 class="major">Characters</h2>
         <section class="features">
           <article v-for="person in people">

@@ -1,23 +1,27 @@
 <template>
-  <div class="container">
-    <h2>{{ person.name }}</h2>
-    <p>Birth Year:{{ person.birth_year }}</p>
-    <p>Eye Color: {{ person.eye_color }}</p>
-    <p>Gender: {{ person.gender}}</p>
-    <p>Hair Color:{{ person.hair_color}}</p>
-    <p>Height: {{ person.height}}</p>
-    <p>Mass: {{ person.mass}}</p>
-    <p>Skin Color: {{ person.skin_color}}</p>
-    <p v-show="planetloaded">Planet: {{ planet.name}}</p>
-    <p>Species: {{ species.name}}</p>
-    <p v-for="starship in starships">Starships Flown: {{ starship.name}}</p>
-    <p v-for="vehicle in vehicles">Vehicles Used: {{ vehicle.name}}</p>
-    <p v-for="film in films">Appeared in: {{ film.title }}</p>
-
-    <div>
-      <router-link to="/swapi">Back to all people</router-link>
+  <section id="three" class="wrapper spotlight style3">
+    <div class="inner">
+      <a href="#" class="image">
+        <img src="images/pic03.jpg" alt />
+      </a>
+      <div class="content">
+        <h2 class="major">{{ person.name }}</h2>
+        <p>Birth Year:{{ person.birth_year }}</p>
+        <p>Eye Color: {{ person.eye_color }}</p>
+        <p>Gender: {{ person.gender}}</p>
+        <p>Hair Color:{{ person.hair_color}}</p>
+        <p>Height: {{ person.height}}</p>
+        <p>Mass: {{ person.mass}}</p>
+        <p>Skin Color: {{ person.skin_color}}</p>
+        <p v-show="planetloaded">Planet: {{ planet.name}}</p>
+        <p>Species: {{ species.name}}</p>
+        <p v-for="starship in starships">Starships Flown: {{ starship.name}}</p>
+        <p v-for="vehicle in vehicles">Vehicles Used: {{ vehicle.name}}</p>
+        <p v-for="film in films">Appeared in: {{ film.title }}</p>
+        <a href="/swapi" class="special">Back to Swapi</a>
+      </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

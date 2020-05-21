@@ -194,7 +194,7 @@ img.bb1 {
 
 h1.me {
   font-family: "Roboto", sans-serif;
-  color: black;
+  color: white;
   text-align: center;
 }
 
@@ -205,7 +205,7 @@ body {
 #bb8 {
   display: inline-block;
   position: absolute;
-  margin-top: 400px;
+  margin-top: 450px;
 }
 
 .antennaes {

@@ -81,6 +81,7 @@ export default {
 <style scoped>
 input {
   color: white;
+  text-align: center;
 }
 div.signup {
   text-align: center;
